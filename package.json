@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
     "start": "nodemon --exec babel-node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.11.1",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.0",
     "body-parser": "^1.19.0",
@@ -20,5 +20,9 @@
     "express": "^4.17.1",
     "json": "^9.0.6",
     "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.0",
+    "@babel/core": "^7.12.0"
   }
 }
